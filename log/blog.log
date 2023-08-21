@@ -1,0 +1,29 @@
+2023-08-21T15:02:56.176+03:00  INFO 5212 --- [restartedMain] c.i.TechCareerFullStack2Application      : Starting TechCareerFullStack2Application using Java 17.0.8 with PID 5212 (C:\Users\ABRA\Documents\GitHub\techcareer-full-stack-bootcamp\TechCareer_FullStack_SpringBoot\target\classes started by ABRA in C:\Users\ABRA\Documents\GitHub\techcareer-full-stack-bootcamp)
+2023-08-21T15:02:56.179+03:00  INFO 5212 --- [restartedMain] c.i.TechCareerFullStack2Application      : The following 1 profile is active: "frontend"
+2023-08-21T15:02:56.250+03:00  INFO 5212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-21T15:02:56.251+03:00  INFO 5212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-21T15:02:58.229+03:00  INFO 5212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-21T15:02:58.261+03:00  INFO 5212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2023-08-21T15:02:59.323+03:00  INFO 5212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4444 (http)
+2023-08-21T15:02:59.335+03:00  INFO 5212 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-21T15:02:59.336+03:00  INFO 5212 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-21T15:02:59.451+03:00  INFO 5212 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-21T15:02:59.452+03:00  INFO 5212 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3199 ms
+2023-08-21T15:02:59.607+03:00  INFO 5212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-21T15:02:59.928+03:00  INFO 5212 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2023-08-21T15:02:59.931+03:00  INFO 5212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-21T15:02:59.944+03:00  INFO 5212 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2023-08-21T15:03:00.031+03:00 DEBUG 5212 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-08-21T15:03:00.033+03:00 DEBUG 5212 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-08-21T15:03:00.647+03:00  INFO 5212 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-21T15:03:01.908+03:00  INFO 5212 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-21T15:03:02.117+03:00  WARN 5212 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-21T15:03:02.339+03:00 DEBUG 5212 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-08-21T15:03:02.397+03:00  INFO 5212 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-08-21T15:03:02.482+03:00 DEBUG 5212 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-08-21T15:03:03.821+03:00 DEBUG 5212 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-08-21T15:03:03.840+03:00 DEBUG 5212 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-08-21T15:03:04.271+03:00  INFO 5212 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-21T15:03:04.278+03:00  INFO 5212 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-21T15:03:04.381+03:00  INFO 5212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4444 (http) with context path ''
+2023-08-21T15:03:04.411+03:00  INFO 5212 --- [restartedMain] c.i.TechCareerFullStack2Application      : Started TechCareerFullStack2Application in 8.862 seconds (process running for 9.585)
