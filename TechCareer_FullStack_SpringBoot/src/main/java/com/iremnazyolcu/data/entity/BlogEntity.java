@@ -1,5 +1,6 @@
 package com.iremnazyolcu.data.entity;
 
+import com.iremnazyolcu.data.BlogEntityEmbeddable;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.ToString;
@@ -20,7 +21,7 @@ import java.util.Date;
 @Entity
 // database'deki table name 'blogs' olsun
 @Table(name = "blogs")
-// Blog(N) Categories(1)
+// Blog(N) - Categories(1)
 public class BlogEntity implements Serializable {
 
     // Serialization
@@ -34,15 +35,9 @@ public class BlogEntity implements Serializable {
     @Column(name = "blog_id", unique = true, nullable = false, insertable = true, updatable = false)
     private Long blogId;
 
-    // HEADER
-    @Column(name = "header", length = 500, columnDefinition = "varchar(500) default 'Header has not been written...'")
-    private String header;
-
-    // CONTENT
-    // Lob: Hibernate'de karşımıza gelen yapıdır
-    // Large Object anlamına gelir, yani büyük veriler için kullanılır
-    @Lob
-    private String content;
+    // EMBEDDABLE
+    @Embedded
+    private BlogEntityEmbeddable blogEntityEmbeddable = new BlogEntityEmbeddable();
 
     // DATE
     @CreationTimestamp

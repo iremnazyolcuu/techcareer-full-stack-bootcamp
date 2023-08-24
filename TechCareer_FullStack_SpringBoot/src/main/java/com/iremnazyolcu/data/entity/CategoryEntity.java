@@ -18,7 +18,7 @@ import java.util.Date;
 @Entity
 // database'deki table name 'categories' olsun
 @Table(name = "categories")
-// Categories(1) Blog(N)
+// Categories(1) - Blog(N)
 public class CategoryEntity implements Serializable {
 
     // Serialization
