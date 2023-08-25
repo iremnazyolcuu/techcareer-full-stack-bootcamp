@@ -51,5 +51,19 @@ public class BlogEntity extends AuditingAwareBaseEntity implements Serializable 
     private String justJava;
     */
 
+    // RELATION
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "category_id", nullable = false)
+    CategoryEntity relationCategoryEntity;
 
+    // Constructor (Parametresiz)
+    public BlogEntity() {
+    }
+
+    // Constructor (Parametreli)
+    public BlogEntity(BlogEntityEmbeddable blogEntityEmbeddable, CategoryEntity relationCategoryEntity) {
+        this.blogEntityEmbeddable = blogEntityEmbeddable;
+        this.relationCategoryEntity = relationCategoryEntity;
+
+    }
 }
