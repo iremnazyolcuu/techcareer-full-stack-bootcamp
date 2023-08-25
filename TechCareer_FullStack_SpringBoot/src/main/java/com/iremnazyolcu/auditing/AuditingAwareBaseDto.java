@@ -11,6 +11,7 @@ import java.util.Date;
 @Getter
 @Setter
 abstract public class AuditingAwareBaseDto implements Serializable {
+
     // Serialization
     public static final Long serialVersionUID = 1L;
 
