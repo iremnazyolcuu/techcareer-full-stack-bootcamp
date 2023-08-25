@@ -13,6 +13,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 // SUPER CLASS
+// öncelikle bu bir BaseEntity olacak, yani bunun Super Class olduğunu belirtmemiz şart
 @MappedSuperclass
 @JsonIgnoreProperties(value = {"created_date, updated_date"}, allowGetters = true)
 abstract public class AuditingAwareBaseEntity implements Serializable {
@@ -20,7 +21,7 @@ abstract public class AuditingAwareBaseEntity implements Serializable {
     // Serialization
     public static final Long serialVersionUID = 1L;
 
-    // AUDITING
+    // AUDITIN
     // KİM EKLEDİ?
     @CreatedBy
     @Column(name = "created_user")
