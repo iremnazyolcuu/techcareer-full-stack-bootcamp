@@ -1,5 +1,6 @@
 package com.iremnazyolcu.data.entity;
 
+import com.iremnazyolcu.auditing.AuditingAwareBaseEntity;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.ToString;
@@ -19,7 +20,7 @@ import java.util.Date;
 // database'deki table name 'categories' olsun
 @Table(name = "categories")
 // Categories(1) - Blog(N)
-public class CategoryEntity implements Serializable {
+public class CategoryEntity extends AuditingAwareBaseEntity implements Serializable {
 
     // Serialization
     public static final Long serialVersionUID = 1L;
