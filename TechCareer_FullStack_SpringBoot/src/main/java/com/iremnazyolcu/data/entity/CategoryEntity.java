@@ -9,6 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 // LOMBOK
 @Data
@@ -42,5 +43,17 @@ public class CategoryEntity extends AuditingAwareBaseEntity implements Serializa
     @Temporal(TemporalType.TIMESTAMP)
     private Date systemDate;
 
+    // RELATION
+    @OneToMany(mappedBy = "relationCategoryEntity", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    List<BlogEntity> relationBlogEntityList;
 
+    // Constructor(Parametresiz)
+    public CategoryEntity() {
+    }
+
+    // Constructor(Parametreli)
+    public CategoryEntity(String categoryName) {
+        this.categoryName = categoryName;
+
+    }
 }
