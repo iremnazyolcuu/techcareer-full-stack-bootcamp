@@ -21,7 +21,7 @@ abstract public class AuditingAwareBaseEntity implements Serializable {
     // Serialization
     public static final Long serialVersionUID = 1L;
 
-    // AUDITIN
+    // AUDITING
     // KİM EKLEDİ?
     @CreatedBy
     @Column(name = "created_user")
