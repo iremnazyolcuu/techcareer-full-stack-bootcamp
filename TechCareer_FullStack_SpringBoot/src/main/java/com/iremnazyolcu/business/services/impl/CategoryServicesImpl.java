@@ -90,7 +90,7 @@ public class CategoryServicesImpl implements ICategoryServices<CategoryDto, Cate
             categoryEntity = iCategoryRepository.findById(id)
                     .orElseThrow(() -> new BlogNotFoundException(id + " Nolu ID Bulunmadı !!!!"));
         } else if (id == null)
-            throw new HamitMizrakException("Category id bull değerdir");
+            throw new IremnazYolcuException("Category id bull değerdir");
         return entityToDto(categoryEntity);
     }
 
