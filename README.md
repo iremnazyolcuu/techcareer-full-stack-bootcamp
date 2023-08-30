@@ -1,2 +1,2 @@
 # techcareer-full-stack-bootcamp
-My full stack coding journey through Techcareer's Full-Stack Developer Bootcamp
+Techcareer Full-Stack Developer Bootcamp 
